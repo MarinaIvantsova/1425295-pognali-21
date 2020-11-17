@@ -1,7 +1,7 @@
 # Личный проект «Погнали» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Марина Иванцова](https://up.htmlacademy.ru/adaptive/21/user/1425295).
-* Наставник: Полина Катышева - наставник.
+* Наставник: Полина Катышева - (https://htmlacademy.ru/profile/polina).
 
 ---
 
