@@ -40,13 +40,13 @@
       </div>
       <div class="contacts">
         <a class="contacts__mobile" href="tel:88005558628"> 8 800 555-86-28</a>
-        <a class="contacts__mail" href="#">mail@htmlacademy.ru</a>
+        <a class="contacts__mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
       </div>
       <div class="socials">
         <ul class="socials__list">
-          <li class="socials__list-item">Facebook</li>
-          <li class="socials__list-item">Vkontakte</li>
-          <li class="socials__list-item">Instagram</li>
+          <li class="socials__list-item"><a href="#">Facebook</a></li>
+          <li class="socials__list-item"><a href="#">Vkontakte</a></li>
+          <li class="socials__list-item"><a href="#">Instagram</a></li>
         </ul>
       </div>
     </nav>
@@ -59,16 +59,16 @@
           <h2 class="visually-hidden">
             Реклама сервиса
           </h2>
-          <p class="promo__slogan">В путешествие<br>с крутыми<br>попутчиками!</p>
+          <p class="promo__slogan">В путешествие с крутыми попутчиками!</p>
         </header>
         <img class="promo__image" src="https://via.placeholder.com/192x255">
         <blockquote class="quote">
-          <p class="quote__text">"Лучшее предложение,<br>что я видел в жизни!"</p>
-          <cite class="quote__author">Мурат Эльтазин<br>главный редактор<br>газеты "гаджетлайф"</cite>
+          <p class="quote__text">"Лучшее предложение, что я видел в жизни!"</p>
+          <cite class="quote__author">Мурат Эльтазин главный редактор газеты "гаджетлайф"</cite>
         </blockquote>
         <ol class="services-list">
           <li class="services-list__item">
-            Выберете направление
+            Выберите направление
           </li>
           <li class="services-list__item">
             Изучите идеи путешественников
@@ -85,20 +85,20 @@
     <section class="about">
       <div class="about__wrapper">
         <h2 class="about__title">О сервисе</h2>
-        <p class="about__description">Любое путешествие веселее<br>с попутчиками, которые на<br>одной волне с тобой!
-          Делитесь<br>своими идеями путешествий и<br>черпайте вдохговение в чужих.</p>
-        <p class="about__text">А если найдете кого-то<br>близкого по духу - скорее<br>зовите в совместный трип!</p>
+        <p class="about__description">Любое путешествие веселее с попутчиками, которые на дной волне с тобой!
+          Делитесь своими идеями путешествий и черпайте вдохновение в чужих.</p>
+        <p class="about__text">А если найдете кого-то близкого по духу - скорее зовите в совместный трип!</p>
       </div>
     </section>
     <section class="countries">
       <div class="countries__wrapper">
         <h2 class="countries__title">Направления</h2>
-        <p class="countries__description">Мы не продаем туры<br>и ничего не рекламируем.<br>Люди сами пишут о
-          странах,<br>куда хотели бы отправиться<br>и чем можно там заняться.</p>
+        <p class="countries__description">Мы не продаем туры и ничего не рекламируем. Люди сами пишут о
+          странах, куда хотели бы отправиться и чем можно там заняться.</p>
         <ul class="countries-list">
           <li class="countries-list__item">
-            <div class="countries-list__description">
-              <img class="countries__image-thailand" src="https://via.placeholder.com/270x110">
+            <div class="country-card">
+              <img class="countries__image-country-type" src="https://via.placeholder.com/270x110">
               <img class="countries__image-thailand-flag" src="https://via.placeholder.com/35x24">
               <h3 class="country-title">Таиланд</h3>
               <p class="country-text">Джунгли зовут</p>
@@ -106,37 +106,36 @@
             </div>
           </li>
           <li class="countries-list__item">
-            <div class="countries-list__description">
-              <img class="countries__image-thailand" src="https://via.placeholder.com/270x110">
-              <img class="countries__image-thailand-flag" src="https://via.placeholder.com/35x24">
+            <div class="country-card">
+              <img class="countries__image-country-type" src="https://via.placeholder.com/270x110">
+              <img class="countries__image-country-type-flag" src="https://via.placeholder.com/35x24">
               <h3 class="country-title">Франция</h3>
               <p class="country-text">Трэ бьен, манифик!</p>
               <span class="country-visitors">12518</span>
             </div>
           </li>
           <li class="countries-list__item">
-            <div class="countries-list__description">
-              <img class="countries__image-thailand" src="https://via.placeholder.com/270x110">
-              <img class="countries__image-thailand-flag" src="https://via.placeholder.com/35x24">
+            <div class="country-card">
+              <img class="countries__image-country-type" src="https://via.placeholder.com/270x110">
+              <img class="countries__image-country-type-flag" src="https://via.placeholder.com/35x24">
               <h3 class="country-title">Чехия</h3>
               <p class="country-text">Закоулки старой Европы</p>
               <span class="country-visitors">5326</span>
             </div>
           </li>
         </ul>
-        <button class="Show" type="button">Показать все</button>
+        <a class="show" href="#">Показать все</button>
       </div>
     </section>
     <section class="companions">
       <div class="companions__wrapper">
         <h2 class="companions__title">Попутчики</h2>
-        <p class="companions__description">Все мы индивидуальны и у<br>каждого свой взгляд на<br>идеальный
-          отдых.Одному<br>нужен пляж и коктейль, а<br>другому маршрут для хайкинга.</p>
-        <p class="companions__text">Теперь можно легко найти<br>единомышленников!</p>
+        <p class="companions__description">Все мы индивидуальны и у каждого свой взгляд на идеальный
+          отдых.Одному нужен пляж и коктейль, а другому маршрут для хайкинга.</p>
+        <p class="companions__text">Теперь можно легко найти единомышленников!</p>
         <ul class="companions__list">
           <li class="companions__item traveller-profile">
             <img class="traveller-profile__avatar" src="https://via.placeholder.com/270x270">
-            <!--Почему div-->
             <div class="traveller-profile__level">99 level</div>
             <div class="traveller-profile__info">
               <h3 class="traveller-profile__name">Таня Фирсова</h3>
@@ -282,17 +281,17 @@
           Заинтересовались?
         </h2>
         <p class="feedback__description">
-          Зарегистрируйтесь,<br>это быстро и бесплатно!<br>Уже зарегистрированы? Тогда<br>скорее <a
-            class="feedback_login" href="#">авторизуйтесь</a>
+          Зарегистрируйтесь, это быстро и бесплатно! Уже зарегистрированы? Тогда скорее <a class="feedback_login"
+            href="#">авторизуйтесь</a>
         </p>
         <form class="feedback__form" action="https://echo.htmlacademy.ru">
           <label aria-label="Форма регистрации">
             <input class="feedback__field" type="text" placeholder="E-mail">
-            <button class="feedback__button button-registration" type="submit" aria-label="Регистрация"></button>
           </label>
+          <button class="feedback__button button-registration" type="submit" aria-label="Регистрация"></button>
         </form>
         <p class="feedback__questions">
-          Остались вопросы?<br>Мы с радостью на них ответим!
+          Остались вопросы? Мы с радостью на них ответим!
         </p>
         <div class="contacts">
           <a class="contacts__mobile" href="tel:88005558628"> 8 800 555-86-28</a>
@@ -304,7 +303,7 @@
   <footer class="page-footer">
     <div class="page-footer__contacts address">
       <p class="adress__street">
-        Ул.Большая<br>Конюшенная, 19/8
+        Ул.Большая Конюшенная, 19/8
       </p>
       <a class="address__route" href="#">Проложить маршрут</a>
     </div>
@@ -314,9 +313,9 @@
     </a>
     <div class="socials">
       <ul class="socials__list">
-        <li class="socials__list-item">Facebook</li>
-        <li class="socials__list-item">Vkontakte</li>
-        <li class="socials__list-item">Instagram</li>
+        <li class="socials__list-item"><a href="#">Facebook</a></li>
+        <li class="socials__list-item"><a href="#">Vkontakte</a></li>
+        <li class="socials__list-item"><a href="#">Instagram</a></li>
       </ul>
     </div>
     <div class="copyright" <p class="copyright__text">Разработано</p>
@@ -325,5 +324,4 @@
       </a>
   </footer>
 </body>
-
 </html>
