@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html class="form-page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Погнали</title>
+</head>
+
+<body class="form-page__body">
+  <header class="page-header">
+    <a class="logo">
+      <img class="logo__image" src="https://via.placeholder.com/96x15">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a href="index.html">
+              О сервисе
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">
+              Направления
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="catalog.html">
+              Попутчики
+            </a>
+          </li>
+        </ul>
+        <div class="main-nav__list authorization-list">
+          <a class="authorization-list__login" href="login.html">Авторизация</a>
+        </div>
+
+      </div>
+      <div class="contacts">
+        <a class="contacts__mobile" href="tel:88005558628"> 8 800 555-86-28</a>
+        <a class="contacts__mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+      </div>
+      <div class="socials">
+        <ul class="socials__list">
+          <li class="socials__list-item"><a href="#">Facebook</a></li>
+          <li class="socials__list-item"><a href="#">Vkontakte</a></li>
+          <li class="socials__list-item"><a href="#">Instagram</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="form-page__main">
+    <h1 class="countries-title">Направления</h1>
+    <section class="traveller-profile">
+      <div class="traveller-profile__wrapper">
+        <div class="traveller-profile__level">80 level</div>
+        <img class="traveller-profile__avatar" src="https://via.placeholder.com/270x270">
+        <p class="traveller-profile__text">сменить фото</p>
+        <ul class="traveller-profile__hashtags hashtags">
+          <li class="hashtags__item">
+            #бургер
+          </li>
+          <li class="hashtags__item">
+            #бар
+          </li>
+          <li class="hashtags__item">
+            #футбол
+          </li>
+          <li class="hashtags__item">
+            #концерт
+          </li>
+          <li class="hashtags__item">
+            #крафт
+          </li>
+        </ul>
+        <ul class="traveller-profile__travel-way travel-way">
+          <li class="travel-way__item active">
+            <input type="checkbox" id="avia" name="avia" checked>
+            <label class="visually-hidden" for="avia">Авиаперелет</label>
+            <img src="https://via.placeholder.com/20x21">
+          </li>
+          <li class="travel-way__item active">
+            <input type="checkbox" id="bus" name="bus" checked>
+            <label class="visually-hidden" for="bus">Автобус</label>
+            <img src="https://via.placeholder.com/17x19">
+          </li>
+          <li class="travel-way__item">
+            <input type="checkbox" id="bicycle" name="bicycle">
+            <label class="visually-hidden" for="bicycle">Велосипед</label>
+            <img src="https://via.placeholder.com/23x24">
+          </li>
+          <li class="travel-way__item active">
+            <input type="checkbox" id="foot" name="foot" checked>
+            <label class="visually-hidden" for="foot">Пешком</label>
+            <img src="https://via.placeholder.com/20x23">
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="plans">
+      <div class="plans__wrapper">
+        <h2 class="plans__title">Мои планы:</h2>
+        <ol class="plans__list">
+          <li class="owner-plan">
+            ` <p class="owner-plan__text"><strong>Франция, Италия</strong></p>
+            <p class="owner-plan__text">3 попутчика</p>
+            <p class="owner-plan__text">26 мар — 29 мар</p>
+            <button class="owner-plan__text" type="button">Изменить</button>
+          </li>
+          <li class="owner-plan">
+            ` <p class="owner-plan__text"><strong>Таиланд, Индонезия</strong></p>
+            <p class="owner-plan__text">1 попутчик</p>
+            <p class="owner-plan__text">21 июл — 15 июл</p>
+            <button class="owner-plan__text" type="button">Изменить</button>
+          </li>
+        </ol>
+      </div>
+    </section>
+    <section class="plans plans--add">
+      <div class="plans__wrapper">
+        <h2 class="plans__title">Добавить план</h2>
+        <ol class="steps-list">
+          <li class="steps-list__item card-step">
+            <h3 class="card-step__subtitle">Шаг 1. Даты пребывания</h3>
+            <p class="card-step__text">Укажите предпочтительное количество попутчиков, которых вы хотели бы
+              позвать в поездку, и ее предполагаемую длительность.</p>
+            <span class="card-step__description-text">ищу попутчиков:</span>
+            <span class="card-step__description-text-people">ЧЕЛ.</span>
+            <div class="card-step__quantity">
+              <button class="less" type="button">-</button>
+              <input class="quantity" type="text" name="people-quantity" value="2">
+              <button class="more" type="button">+</button>
+            </div>
+            <span class="card-step__description-text">длительность:</span>
+            <span class="card-step__description-text-days">ДН.</span>
+            <div class="duration">
+              <button class="duration__less" type="button">-</button>
+              <input class="duration__quantity" type="text" name="days" value="3">
+              <button class="duration__more" type="button">+</button>
+            </div>
+            <div class="checkbox-text">
+              <input type="checkbox" name="children" value="Можно с детьми">
+              <label class="checkbox-text__label" for="children">Можно с детьми</label>
+
+            </div>
+            <div class="calendar">
+              <ul class="calendar__month-list month-list">
+                <li class="month-list__item-prev">
+                  <button class="month-list__item-prev-btn" type="button">❮</button>
+                </li>
+                <li class="month-list__item-next">
+                  <button class="month-listt__item-prev-btn" type="button">❯</button>
+                </li>
+                <li class="month-list__item-date">
+                  Март 2019
+                </li>
+              </ul>
+
+              <ul class="calendar__weekdays-list weekdays-list">
+                <li class="weekdays-list__item">П</li>
+                <li class="weekdays-list__item">В</li>
+                <li class="weekdays-list__item">С</li>
+                <li class="weekdays-list__item">Ч</li>
+                <li class="weekdays-list__item">П</li>
+                <li class="weekdays-list__item">С</li>
+                <li class="weekdays-list__item">В</li>
+              </ul>
+
+              <ul class="calendar__days-list days-list">
+                <li class="days-list__item">23</li>
+                <li class="days-list__item">24</li>
+                <li class="days-list__item">25</li>
+                <li class="days-list__item">26</li>
+                <li class="days-list__item">27</li>
+                <li class="days-list__item">28</li>
+                <li class="days-list__item">1</li>
+                <li class="days-list__item">2</li>
+                <li class="days-list__item">3</li>
+                <li class="days-list__item">4</li>
+                <li class="days-list__item">5</li>
+                <li class="days-list__item">6</li>
+                <li class="days-list__item">7</li>
+                <li class="days-list__item">8</li>
+                <li class="days-list__item">9</li>
+                <li class="days-list__item">10</li>
+                <li class="days-list__item">11</li>
+                <li class="days-list__item">12</li>
+                <li class="days-list__item">13</li>
+                <li class="days-list__item">14</li>
+                <li class="days-list__item">15</li>
+                <li class="days-list__item">16</li>
+                <li class="days-list__item">17</li>
+                <li class="days-list__item">18</li>
+                <li class="days-list__item">19</li>
+                <li class="days-list__item">20</li>
+                <li class="days-list__item">21</li>
+                <li class="days-list__item">22</li>
+                <li class="days-list__item">23</li>
+                <li class="days-list__item">24</li>
+                <li class="days-list__item">25</li>
+                <li class="days-list__item"><span class="days-list__item-active">26</span></li>
+                <li class="days-list__item">27</li>
+                <li class="days-list__item">28</li>
+                <li class="days-list__item">29</li>
+                <li class="days-list__item">30</li>
+                <li class="days-list__item">31</li>
+                <li class="days-list__item">1</li>
+                <li class="days-list__item">2</li>
+                <li class="days-list__item">3</li>
+                <li class="days-list__item">4</li>
+                <li class="days-list__item">5</li>
+              </ul>
+            </div>
+            <a class="next-step" href="#">Следующий шаг</a>
+          </li>
+
+          <li class="steps-list__item card-step">
+            <h3 class="card-step__subtitle">Шаг 2. Маршрут</h3>
+            <p class="card-step__text">Укажите страны, которые вы хотели бы
+              посетить. Это может быть одна или сразу несколько.</p>
+            <ul class="card-step__countries-list countries-list">
+              <li class="countries-list__item">
+                <select class="countries-list__item-select" size="1">
+                  <option class="countries-list__item-select__option">Босния и Герцеговина</option>
+                </select>
+
+                <button class="countries-list__item-btn" type="button">Выбрать страну</button>
+                <div class="flag">
+                  Босния
+                  <button class="flag__remove">Удалить</button>
+                </div>
+              </li>
+              <li class="countries-list__item">
+                <select class="countries-list__item-select" size="1">
+                  <option class="countries-list__item-select__option">Чехия</option>
+                </select>
+                <button class="countries-list__item-btn" type="button">Выбрать страну</button>
+                <div class="flag">
+                  Чехия
+                  <button class="flag__remove">Удалить</button>
+                </div>
+              </li>
+              <li class="countries-list__item">
+                <select class="countries-list__item-select" size="1">
+                  <option class="countries-list__item-select__option">Выберите страну</option>
+                </select>
+
+                <button class="countries-list__item-btn" type="button">Выбрать страну</button>
+                <div class="flag">
+                  <button class="flag__remove" type="button">Удалить</button>
+                </div>
+                <div class="countries-list__choose-countries choose-countries">
+                  <ul class="choose-countries__alhabet alhabet-list">
+                    <li class="alhabet-list__item">
+                      <a class="alhabet-list__item-link-selected" href="#">А</a>
+                    </li>
+                    <li class="alhabet-list__item">
+                      <a class="alhabet-list__item-link" href="#">Б</a>
+                    </li>
+                    <li class="alhabet-list__item">
+                      <a class="alhabet-list__item-link" href="#">В</a>
+                    </li>
+                    <li class="alhabet-list__item">
+                      <a class="alhabet-list__item-link" href="#">Г</a>
+                    </li>
+                    <li class="alhabet-list__item">
+                      <a class="alhabet-list__item-link" href="#">Д</a>
+                    </li>
+                    <li class="alhabet-list__item">
+                      <a class="alhabet-list__item-link" href="#">Е</a>
+                    </li>
+                    <li class="alhabet-list__item">
+                      <a class="alhabet-list__item-link" href="#">З</a>
+                    </li>
+                    <li class="alhabet-list__item">
+                      <a class="alhabet-list__item-link" href="#">И</a>
+                    </li>
+                    <li class="alhabet-list__item">
+                      <a class="alhabet-list__item-link" href="#">К</a>
+                    </li>
+                    <li class="alhabet-list__item">
+                      <a class="alhabet-list__item-link" href="#">Л</a>
+                    </li>
+                    <li class="alhabet-list__item">
+                      <a class="alhabet-list__item-link" href="#">М</a>
+                    </li>
+                    <li class="alhabet-list__item">
+                      <a class="alhabet-list__item-link" href="#">Н</a>
+                    </li>
+                    <li class="alhabet-list__item">
+                      <a class="alhabet-list__item-link" href="#">О</a>
+                    </li>
+                    <li class="alhabet-list__item">
+                      <a class="alhabet-list__item-link" href="#">П</a>
+                    </li>
+                    <li class="alhabet-list__item">
+                      <a class="alhabet-list__item-link" href="#">Р</a>
+                    </li>
+                    <li class="alhabet-list__item">
+                      <a class="alhabet-list__item-link" href="#">С</a>
+                    </li>
+                    <li class="alhabet-list__item">
+                      <a class="alhabet-list__item-link" href="#">Т</a>
+                    </li>
+                    <li class="alhabet-list__item">
+                      <a class="alhabet-list__item-link" href="#">У</a>
+                    </li>
+                    <li class="alhabet-list__item">
+                      <a class="alhabet-list__item-link" href="#">Ф</a>
+                    </li>
+                    <li class="alhabet-list__item">
+                      <a class="alhabet-list__item-link" href="#">Х</a>
+                    </li>
+                    <li class="alhabet-list__item">
+                      <a class="alhabet-list__item-link" href="#">Ц</a>
+                    </li>
+                    <li class="alhabet-list__item">
+                      <a class="alhabet-list__item-link" href="#">Ч</a>
+                    </li>
+                    <li class="alhabet-list__item">
+                      <a class="alhabet-list__item-link" href="#">Ш</a>
+                    </li>
+                    <li class="alhabet-list__item">
+                      <a class="alhabet-list__item-link" href="#">Э</a>
+                    </li>
+                    <li class="alhabet-list__item">
+                      <a class="alhabet-list__item-link" href="#">Ю</a>
+                    </li>
+                    <li class="alhabet-list__item">
+                      <a class="alhabet-list__item-link" href="#">Я</a>
+                    </li>
+                  </ul>
+                  <ul class="choose-countries__by-letter-list by-letter-list">
+                    <li class="by-letter-list__item">
+                      <a class="by-letter-list__item-link" href="#">Австралия</a>
+                    </li>
+                    <li class="by-letter-list__item">
+                      <a class="by-letter-list__item-link" href="#">Австрия</a>
+                    </li>
+                    <li class="by-letter-list__item">
+                      <a class="by-letter-list__item-link" href="#">Азербайджан</a>
+                    </li>
+                    <li class="by-letter-list__item">
+                      <a class="by-letter-list__item-link" href="#">Албания</a>
+                    </li>
+                    <li class="by-letter-list__item">
+                      <a class="by-letter-list__item-link" href="#">Алжир</a>
+                    </li>
+                    <li class="by-letter-list__item">
+                      <a class="by-letter-list__item-link" href="#">Ангола</a>
+                    </li>
+                    <li class="by-letter-list__item">
+                      <a class="by-letter-list__item-link" href="#">Андорра</a>
+                    </li>
+                    <li class="by-letter-list__item">
+                      <a class="by-letter-list__item-link" href="#">Антигуа и Барбуда</a>
+                    </li>
+                    <li class="by-letter-list__item">
+                      <a class="by-letter-list__item-link" href="#">Аргентина</a>
+                    </li>
+                    <li class="by-letter-list__item">
+                      <a class="by-letter-list__item-link" href="#">Армения</a>
+                    </li>
+                    <li class="by-letter-list__item">
+                      <a class="by-letter-list__item-link" href="#">Афганистан</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="countries-list__item-add-country add-country">
+                Добавить страну
+                <button class="add-country__btn" type="button">Добавить страну</button>
+
+              </li>
+            </ul>
+
+            <a class="card-step__next-step" href="#">Следующий шаг</a>
+            <a class="card-step__prev-step" href="#">На шаг назад</a>
+          </li>
+          <li class="steps-list__item card-step">
+            <h3 class="card-step__title">Шаг 3. Развлечения</h3>
+            <p class="card-step__text">Наконец, расскажите о своих планах времяпровождения. Можно писать в
+              свободной форме и ставить тэги.
+            </p>
+            <h4 class="card-step__subtitle">Босния и Герцеговина</h4>
+            <div class="flag">
+              Босния и Герцеговина
+            </div>
+            <textarea class="plan-of-actions-textarea">План действий</textarea>
+            <h4 class="card-step__subtitle">Чехия</h4>
+            <div class="flag">
+              Чехия
+            </div>
+            <textarea class="plans-textarea">Пить пиво и лазить
+              по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
+            <button class="card-step__send" href="#" type="submit">Отправить</button>
+            <a class="card-step__prev-step">На шаг назад</a>
+          </li>
+        </ol>
+      </div>
+    </section>
+  </main>
+  <footer class="form-page-footer">
+    <h3 class="form-page-footer__title">Погнали?</h3>
+    <div class="socials">
+      <ul class="socials__list">
+        <li class="socials__list-item"><a href="#">Facebook</a></li>
+        <li class="socials__list-item"><a href="#">Vkontakte</a></li>
+        <li class="socials__list-item"><a href="#">Instagram</a></li>
+      </ul>
+    </div>
+    <p class="copyright__text">Разработано</p>
+    <a class="copyright__logo">
+      <img src="https://via.placeholder.com/27x33">
+    </a>
+  </footer>
+</body>
+
+</html>
