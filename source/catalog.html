@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html class="catalog-page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Погнали</title>
+</head>
+
+<body class="catalog-page__body">
+  <header class="page-header">
+    <a class="logo">
+      <img class="logo__image" src="https://via.placeholder.com/96x15">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a href="index.html">
+              О сервисе
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">
+              Направления
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="catalog.html">
+              Попутчики
+            </a>
+          </li>
+        </ul>
+        <div class="main-nav__list authorization-list">
+          <a class="authorization-list__login" href="login.html">Авторизация</a>
+        </div>
+
+      </div>
+      <div class="contacts">
+        <a class="contacts__mobile" href="tel:88005558628"> 8 800 555-86-28</a>
+        <a class="contacts__mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+      </div>
+      <div class="socials">
+        <ul class="socials__list">
+          <li class="socials__list-item"><a href="#">Facebook</a></li>
+          <li class="socials__list-item"><a href="#">Vkontakte</a></li>
+          <li class="socials__list-item"><a href="#">Instagram</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="catalog-page__main">
+    <h1 class="companions-catalog">Попутчики</h1>
+    <h2 class="filter-countries">Фильтрация по странам</h2>
+    <section class="choose-ideal-companion">
+      <form class="choose-ideal-companion__filter filter">
+        <ul class="filter__list">
+          <li class="filter__list-item">
+            Хобби
+            <button class="filter__list-item-btn" type="button">Развернуть</button>
+          </li>
+          <li class="filter__list-item">
+            Музыка
+            <button class="filter__list-item-btn" type="button">Свернуть</button>
+            <input class="filter__list-item-checkbox" type="checkbox" value="Тяжелый рок" selected>
+            <input class="filter__list-item-checkbox" type="checkbox" value="Русский рэп" selected>
+            <input class="filter__list-item-checkbox" type="checkbox" value="Евроденс">
+          </li>
+          <li class="filter__list-item">
+            Еда
+            <button class="filter__list-item-btn" type="button">Развернуть</button>
+          </li>
+          <li class="filter__list-item traveller-profile-catalog">
+            Транспорт
+            <button class="filter__list-item-btn" type="button">Свернуть</button>
+            <ul class="traveller-profile-catalog__travel-way travel-way">
+              <li class="travel-way__item active">
+                <span class="visually-hidden">Авиаперелет</span>
+                <img src="https://via.placeholder.com/20x21">
+              </li>
+              <li class="travel-way__item active">
+                <span class="visually-hidden">Автобус</span>
+                <img src="https://via.placeholder.com/17x19">
+              </li>
+              <li class="travel-way__item">
+                <span class="visually-hidden">Велосипед</span>
+                <img src="https://via.placeholder.com/23x24">
+              </li>
+              <li class="travel-way__item active">
+                <span class="visually-hidden">Пешком</span>
+                <img src="https://via.placeholder.com/20x23">
+              </li>
+            </ul>
+          </li>
+          <li class="filter__list-item">
+            Левел
+            <div class="range-level">
+              <label class="min-level">
+                <input type="number" name="min-level" value="30">
+              </label>
+              <label class="max-level">
+                <input type="number" name="max-level" value="100">
+              </label>
+            </div>
+            <div class="range-filter">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="toggle toggle-min"></div>
+              <div class="toggle toggle-max"></div>
+            </div>
+          </li>
+        </ul>
+        <button class="choose-ideal-companion__show" type="button">Показать</button>
+      </form>
+    </section>
+    <section class="companions-catalog">
+      <div class="companions-catalog__wrapper">
+        <h2 class="visually-hidden">Попутчики</h2>
+        <ul class="companions-catalog__list">
+          <li class="companions-catalog__item traveller-profile-catalog">
+            <img class="traveller-profile-catalog__avatar" src="https://via.placeholder.com/70x70">
+            <div class="traveller-profile-catalog__info">
+              <h3 class="traveller-profile-catalog__name">Таня Фирсова</h3>
+              <span class="traveller-profile-catalog__likes">1,5 М</span>
+              <ul class="traveller-profile-catalog__hashtags hashtags">
+                <li class="hashtags__item">
+                  #ЗОЖ
+                </li>
+                <li class="hashtags__item">
+                  #ПП
+                </li>
+                <li class="hashtags__item">
+                  #Фитнес
+                </li>
+                <li class="hashtags__item">
+                  #пляж
+                </li>
+                <li class="hashtags__item">
+                  #авокадо
+                </li>
+                <li class="hashtags__item">
+                  #смузи
+                </li>
+              </ul>
+              <p class="traveller-profile-catalog__text">хочет посетить:</p>
+              <ul class="traveller-profile-catalog__flags flags">
+                <li class="flags__item">
+                  <img src="https://via.placeholder.com/26x18">
+                  <p class="traveller-profile-catalog__title-country">Шри Ланка</p>
+                </li>
+                <li class="flags__item">
+                  <img src="https://via.placeholder.com/26x18">
+                  <p class="traveller-profile-catalog__title-country">Таиланд</p>
+                </li>
+                <li class="flags__item">
+                  <img src="https://via.placeholder.com/26x18">
+                  <p class="traveller-profile-catalog__title-country">Сейшелы</p>
+                </li>
+              </ul>
+              <p class="traveller-profile-catalog__text">транспорт:</p>
+              <ul class="traveller-profile-catalog__travel-way-catalog travel-way-catalog">
+                <li class="travel-way-catalog__item active">
+                  <span class="visually-hidden">Авиаперелет</span>
+                  <img src="https://via.placeholder.com/20x21">
+                </li>
+                <li class="travel-way-catalog__item">
+                  <span class="visually-hidden">Автобус</span>
+                  <img src="https://via.placeholder.com/17x19">
+                </li>
+                <li class="travel-way-catalog__item">
+                  <span class="visually-hidden">Велосипед</span>
+                  <img src="https://via.placeholder.com/23x24">
+                </li>
+                <li class="travel-way-catalog__item">
+                  <span class="visually-hidden">Пешком</span>
+                  <img src="https://via.placeholder.com/20x23">
+                </li>
+              </ul>
+              <p class="traveller-profile-catalog__text">левел:</p>
+              <div class="traveller-profile-catalog__level">99 level</div>
+              <button class="call" type="button">Позвать</button>
+            </div>
+          </li>
+          <li class="companions-catalog__item traveller-profile-catalog">
+            <img class="traveller-profile-catalog__avatar" src="https://via.placeholder.com/70x70">
+            <div class="traveller-profile-catalog__info">
+              <h3 class="traveller-profile-catalog__name">Петя Демин</h3>
+              <span class="traveller-profile-catalog__likes">1500</span>
+              <ul class="traveller-profile-catalog__hashtags hashtags">
+                <li class="hashtags__item">
+                  #бургер
+                </li>
+                <li class="hashtags__item">
+                  #бар
+                </li>
+                <li class="hashtags__item">
+                  #футбол
+                </li>
+                <li class="hashtags__item">
+                  #концерт
+                </li>
+                <li class="hashtags__item">
+                  #крафт
+                </li>
+              </ul>
+              <p class="traveller-profile-catalog__text">хочет посетить:</p>
+              <ul class="traveller-profile-catalog__flags flags">
+                <li class="flags__item">
+                  <img src="https://via.placeholder.com/26x18">
+                  <p class="traveller-profile-catalog__title-country">Бельгия</p>
+                </li>
+                <li class="flags__item">
+                  <img src="https://via.placeholder.com/26x18">
+                  <p class="traveller-profile-catalog__title-country">Чехия</p>
+                </li>
+              </ul>
+              <p class="traveller-profile-catalog__text">транспорт:</p>
+              <ul class="traveller-profile-catalog__travel-way-catalog travel-way-catalog">
+                <li class="travel-way-catalog__item active">
+                  <span class="visually-hidden">Авиаперелет</span>
+                  <img src="https://via.placeholder.com/20x21">
+                </li>
+                <li class="travel-way-catalog__item active">
+                  <span class="visually-hidden">Автобус</span>
+                  <img src="https://via.placeholder.com/17x19">
+                </li>
+                <li class="travel-way-catalog__item">
+                  <span class="visually-hidden">Велосипед</span>
+                  <img src="https://via.placeholder.com/23x24">
+                </li>
+                <li class="travel-way-catalog__item active">
+                  <span class="visually-hidden">Пешком</span>
+                  <img src="https://via.placeholder.com/20x23">
+                </li>
+              </ul>
+              <p class="traveller-profile-catalog__text">левел:</p>
+              <div class="traveller-profile-catalog__level">80 level</div>
+              <button class="call" type="button">Позвать</button>
+            </div>
+          </li>
+          <li class="companions-catalog__item traveller-profile-catalog">
+            <img class="traveller-profile-catalog__avatar" src="https://via.placeholder.com/70x70">
+            <div class="traveller-profile-catalog__info">
+              <h3 class="traveller-profile-catalog__name">Марк Смолов</h3>
+              <span class="traveller-profile-catalog__likes">170</span>
+              <ul class="traveller-profile-catalog__hashtags hashtags">
+                <li class="hashtags__item">
+                  #рэп
+                </li>
+                <li class="hashtags__item">
+                  #тату
+                </li>
+                <li class="hashtags__item">
+                  #хайпбист
+                </li>
+                <li class="hashtags__item">
+                  #кроссовки
+                </li>
+                <li class="hashtags__item">
+                  #суприм
+                </li>
+              </ul>
+              <p class="traveller-profile-catalog__text">хочет посетить:</p>
+              <ul class="traveller-profile-catalog__flags flags">
+                <li class="flags__item">
+                  <img src="https://via.placeholder.com/26x18">
+                  <p class="traveller-profile-catalog__title-country">США</p>
+                </li>
+                <li class="flags__item">
+                  <img src="https://via.placeholder.com/26x18">
+                  <p class="traveller-profile-catalog__title-country">Австралия</p>
+                </li>
+                <li class="flags__item">
+                  <img src="https://via.placeholder.com/26x18">
+                  <p class="traveller-profile-catalog__title-country">Доминикана</p>
+                </li>
+              </ul>
+              <p class="traveller-profile-catalog__text">транспорт:</p>
+              <ul class="traveller-profile-catalog__travel-way-catalog travel-way-catalog">
+                <li class="travel-way-catalog__item active">
+                  <span class="visually-hidden">Авиаперелет</span>
+                  <img src="https://via.placeholder.com/20x21">
+                </li>
+                <li class="travel-way-catalog__item">
+                  <span class="visually-hidden">Автобус</span>
+                  <img src="https://via.placeholder.com/17x19">
+                </li>
+                <li class="travel-way-catalog__item active">
+                  <span class="visually-hidden">Велосипед</span>
+                  <img src="https://via.placeholder.com/23x24">
+                </li>
+                <li class="travel-way-catalog__item active">
+                  <span class="visually-hidden">Пешком</span>
+                  <img src="https://via.placeholder.com/20x23">
+                </li>
+              </ul>
+              <p class="traveller-profile-catalog__text">левел:</p>
+              <div class="traveller-profile-catalog__level">25 level</div>
+              <button class="call" type="button">Позвать</button>
+            </div>
+          </li>
+          <li class="companions-catalog__item traveller-profile-catalog">
+            <img class="traveller-profile-catalog__avatar" src="https://via.placeholder.com/70x70">
+            <div class="traveller-profile-catalog__info">
+              <h3 class="traveller-profile-catalog__name">Лариса Роговая</h3>
+              <span class="traveller-profile-catalog__likes">23</span>
+              <ul class="traveller-profile-catalog__hashtags hashtags">
+                <li class="hashtags__item">
+                  #образование
+                </li>
+                <li class="hashtags__item">
+                  #карьера
+                </li>
+                <li class="hashtags__item">
+                  #учеба
+                </li>
+                <li class="hashtags__item">
+                  #линкедин
+                </li>
+              </ul>
+              <p class="traveller-profile-catalog__text">хочет посетить:</p>
+              <ul class="traveller-profile-catalog__flags flags">
+                <li class="flags__item">
+                  <img src="https://via.placeholder.com/26x18">
+                  <p class="traveller-profile-catalog__title-country">Великобритания</p>
+                </li>
+                <li class="flags__item">
+                  <img src="https://via.placeholder.com/26x18">
+                  <p class="traveller-profile-catalog__title-country">Германия</p>
+                </li>
+              </ul>
+              <p class="traveller-profile-catalog__text">транспорт:</p>
+              <ul class="traveller-profile-catalog__travel-way-catalog travel-way-catalog">
+                <li class="travel-way-catalog__item active">
+                  <span class="visually-hidden">Авиаперелет</span>
+                  <img src="https://via.placeholder.com/20x21">
+                </li>
+                <li class="travel-way-catalog__item active">
+                  <span class="visually-hidden">Автобус</span>
+                  <img src="https://via.placeholder.com/17x19">
+                </li>
+                <li class="travel-way-catalog__item">
+                  <span class="visually-hidden">Велосипед</span>
+                  <img src="https://via.placeholder.com/23x24">
+                </li>
+                <li class="travel-way-catalog__item">
+                  <span class="visually-hidden">Пешком</span>
+                  <img src="https://via.placeholder.com/20x23">
+                </li>
+              </ul>
+              <p class="traveller-profile-catalog__text">левел:</p>
+              <div class="traveller-profile-catalog__level">50 level</div>
+              <button class="call" type="button">Позвать</button>
+            </div>
+          </li>
+        </ul>
+        <button class="companions-catalog__show-more" type="button">+</button>
+        <p class="companions-catalog__show-more-text">Показать еще</p>
+        <ul class="companions-catalog__turn-pages">
+          <li class="turn-pages__item-prev">
+            <button class="turn-pages__item-prev-btn" type="button">❮</button>
+          </li>
+          <li class="turn-pages__item-prev">
+            <button class="turn-pages__item-prev-btn" type="button">❯</button>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer class="catalog-page-footer">
+    <h3 class="catalog-page-footer__title">Погнали?</h3>
+    <div class="socials">
+      <ul class="socials__list">
+        <li class="socials__list-item"><a href="#">Facebook</a></li>
+        <li class="socials__list-item"><a href="#">Vkontakte</a></li>
+        <li class="socials__list-item"><a href="#">Instagram</a></li>
+      </ul>
+    </div>
+    <p class="copyright__text">Разработано</p>
+    <a class="copyright__logo">
+      <img src="https://via.placeholder.com/27x33">
+    </a>
+  </footer>
+</body>
+
+</html>
