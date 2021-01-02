@@ -23,12 +23,12 @@
             </a>
           </li>
           <li class="site-list__item">
-            <a href="#">
+            <a href="form.html">
               Направления
             </a>
           </li>
           <li class="site-list__item">
-            <a href="catalog.html">
+            <a href="#">
               Попутчики
             </a>
           </li>
@@ -54,54 +54,70 @@
   <main class="catalog-page__main">
     <h1 class="companions-catalog">Попутчики</h1>
     <h2 class="filter-countries">Фильтрация по странам</h2>
-    <section class="choose-ideal-companion">
-      <form class="choose-ideal-companion__filter filter">
+    <section class="ideal-companion">
+      <form class="ideal-companion__filter filter">
+        <h2 class="filter__title">Подберите идеального попутчика</h2>
         <ul class="filter__list">
-          <li class="filter__list-item">
+          <li class="filter__list list-item">
             Хобби
-            <button class="filter__list-item-btn" type="button">Развернуть</button>
+            <button class="list-item__extend" type="button">Развернуть</button>
           </li>
-          <li class="filter__list-item">
+          <li class="filter__list list-item">
             Музыка
-            <button class="filter__list-item-btn" type="button">Свернуть</button>
-            <input class="filter__list-item-checkbox" type="checkbox" value="Тяжелый рок" selected>
-            <input class="filter__list-item-checkbox" type="checkbox" value="Русский рэп" selected>
-            <input class="filter__list-item-checkbox" type="checkbox" value="Евроденс">
+            <button class="list-item__turn" type="button">Свернуть</button>
+            <div class="music">
+              <label class="music__label" for="hard-rock">Тяжелый рок</label>
+              <input class="music__checkbox" type="checkbox" id="hard-rock" selected>
+            </div>
+            <div class="music">
+              <label class="music__label" for="russian-rep">Русский рэп</label>
+              <input class="music__checkbox" type="checkbox" id="russian-rep" selected>
+            </div>
+            <div class="music">
+              <label class="music__label" for="eurodance">Евроденс</label>
+              <input class="music__checkbox" type="checkbox" id="eurodance">
+            </div>
           </li>
-          <li class="filter__list-item">
+          <li class="filter__list list-item">
             Еда
-            <button class="filter__list-item-btn" type="button">Развернуть</button>
+            <button class="list-item__extend" type="button">Развернуть</button>
           </li>
-          <li class="filter__list-item traveller-profile-catalog">
+          <li class="filter__list list-item">
             Транспорт
-            <button class="filter__list-item-btn" type="button">Свернуть</button>
-            <ul class="traveller-profile-catalog__travel-way travel-way">
-              <li class="travel-way__item active">
-                <span class="visually-hidden">Авиаперелет</span>
+            <button class="list-item__turn" type="button">Свернуть</button>
+            <div class="transport-checkbox active">
+              <label aria-label="Авиаперелет">
                 <img src="https://via.placeholder.com/20x21">
-              </li>
-              <li class="travel-way__item active">
-                <span class="visually-hidden">Автобус</span>
-                <img src="https://via.placeholder.com/17x19">
-              </li>
-              <li class="travel-way__item">
-                <span class="visually-hidden">Велосипед</span>
-                <img src="https://via.placeholder.com/23x24">
-              </li>
-              <li class="travel-way__item active">
-                <span class="visually-hidden">Пешком</span>
-                <img src="https://via.placeholder.com/20x23">
-              </li>
-            </ul>
+                <input class="transport-checkbox__input" type="checkbox">
+              </label>
+            </div>
+            <div class="transport-checkbox active">
+              <label aria-label="Автобус">
+                <img src="https://via.placeholder.com/20x21">
+                <input class="transport-checkbox__input" type="checkbox">
+              </label>
+            </div>
+            <div class="transport-checkbox">
+              <label aria-label="Велосипед">
+                <img src="https://via.placeholder.com/20x21">
+                <input class="transport-checkbox__input" type="checkbox">
+              </label>
+            </div>
+            <div class="transport-checkbox active">
+              <label aria-label="Пешком">
+                <img src="https://via.placeholder.com/20x21">
+                <input class="transport-checkbox__input" type="checkbox">
+              </label>
+            </div>
           </li>
           <li class="filter__list-item">
             Левел
             <div class="range-level">
               <label class="min-level">
-                <input type="number" name="min-level" value="30">
+                <input type="submit" name="min-level" value="30">
               </label>
               <label class="max-level">
-                <input type="number" name="max-level" value="100">
+                <input type="submit" name="max-level" value="100">
               </label>
             </div>
             <div class="range-filter">
@@ -113,7 +129,7 @@
             </div>
           </li>
         </ul>
-        <button class="choose-ideal-companion__show" type="button">Показать</button>
+        <button class="show" type="button">Показать</button>
       </form>
     </section>
     <section class="companions-catalog">
