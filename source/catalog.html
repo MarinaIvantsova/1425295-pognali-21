@@ -58,13 +58,13 @@
       <form class="ideal-companion__filter filter">
         <h2 class="filter__title">Подберите идеального попутчика</h2>
         <ul class="filter__list">
-          <li class="filter__list list-item">
+          <li class="filter__list-item preferences">
             Хобби
-            <button class="list-item__extend" type="button">Развернуть</button>
+            <button class="preferences__extend" type="button">Развернуть</button>
           </li>
-          <li class="filter__list list-item">
+          <li class="filter__list-item preferences">
             Музыка
-            <button class="list-item__turn" type="button">Свернуть</button>
+            <button class="preferences__turn" type="button">Свернуть</button>
             <div class="music">
               <label class="music__label" for="hard-rock">Тяжелый рок</label>
               <input class="music__checkbox" type="checkbox" id="hard-rock" selected>
@@ -78,13 +78,13 @@
               <input class="music__checkbox" type="checkbox" id="eurodance">
             </div>
           </li>
-          <li class="filter__list list-item">
+          <li class="filter__list-item preferences">
             Еда
-            <button class="list-item__extend" type="button">Развернуть</button>
+            <button class="preferences__extend" type="button">Развернуть</button>
           </li>
-          <li class="filter__list list-item">
+          <li class="filter__list-item preferences">
             Транспорт
-            <button class="list-item__turn" type="button">Свернуть</button>
+            <button class="preferences__turn" type="button">Свернуть</button>
             <div class="transport-checkbox active">
               <label aria-label="Авиаперелет">
                 <img src="https://via.placeholder.com/20x21">
@@ -384,11 +384,15 @@
         <button class="companions-catalog__show-more" type="button">+ Показать еще</button>
         <div class="pagination">
         <ul class="pagination-list">
-          <li class="pagination-list__item">
-            <a class="pagination-list__item-left" href="#">❮</a>
+          <li class="pagination-list__arrow">
+            <a class="pagination-list__arrow--prev" href="#">
+              <img src="img/page_arrows.svg" width="33" height="17" alt="Стрелка влево">
+            </a>
           </li>
-          <li class="pagination-list__item">
-            <a class="pagination-list__item-right" href="#">❯</a>
+          <li class="pagination-list__arrow">
+            <a class="pagination-list__arrow--next" href="#">
+              <img src="img/page_arrows.svg" width="33" height="17" alt="Стрелка вправо">
+            </a>
           </li>
 
         </ul>
